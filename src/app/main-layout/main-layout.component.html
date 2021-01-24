@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="block-title">Photos</h1>
+    <mat-grid-list cols="3" rowHeight="1:1.5">
+        <mat-grid-tile *ngFor='let photo of photos'>
+            <app-photo 
+                [photo]='photo'
+            ></app-photo>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+    <h1 class="block-title">Posts</h1>
+    <app-post
+        *ngFor='let post of posts'
+        [post]='post'
+    ></app-post>
+
+    <h1 class="block-title">Users</h1>
+    <app-user
+        *ngFor='let user of users'
+        [user]='user'
+    ></app-user>
+</div>

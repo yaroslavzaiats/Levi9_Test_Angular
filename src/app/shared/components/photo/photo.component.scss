@@ -1,0 +1,25 @@
+mat-card{
+    width: 80%;
+    height: 80%;
+
+    mat-card-header {
+        align-items: center;
+        margin-bottom: 20px;
+        height: 6vw;
+
+        .mat-card-avatar{
+            height: 8vh;
+            width: 8vh;
+        }
+
+        mat-card-title{
+            margin-bottom: 0px !important;
+            font-size: 1.3vw !important;
+        }
+    }
+
+    .active {
+        color: red;
+    }
+    
+}

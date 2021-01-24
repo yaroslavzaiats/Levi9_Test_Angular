@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    
+    .block-title{
+        color: white;
+        margin-bottom: 50px;
+        margin-top: 50px;    
+    }
+
+    mat-grid-list{
+        width: 80%;
+        padding-bottom: calc(3 * ((40% - 0.666667px) * 1) + 0px + 2px) !important;
+
+        app-photo{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+

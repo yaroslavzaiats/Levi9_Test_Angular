@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="block-title">Activated Photos</h1>
+    <h2 *ngIf='isEmptyPhotos; else notEmpty'>No activated photos</h2>
+    <ng-template #notEmpty>
+        <mat-grid-list cols="3" rowHeight="1:1.5">
+            <mat-grid-tile *ngFor='let photo of activatedPhotos'>
+                <app-photo 
+                    [photo]='photo'
+                ></app-photo>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </ng-template>
+
+    <h1 class="block-title">Activated Posts</h1>
+    <h2 *ngIf='isEmptyPosts; else notEmptyPosts'>No activated posts</h2>
+    <ng-template #notEmptyPosts>
+        <app-post
+            *ngFor='let post of activatedPosts'
+            [post]='post'
+        ></app-post>
+    </ng-template>
+
+    <h1 class="block-title">Activated Users</h1>
+    <h2 *ngIf='isEmptyUsers; else notEmptyUsers'>No activated users</h2>
+    <ng-template #notEmptyUsers>
+        <app-user
+            *ngFor='let user of activatedUsers'
+            [user]='user'
+        ></app-user>
+    </ng-template>
+</div>
