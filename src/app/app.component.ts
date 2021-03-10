@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'levi9-test';
-  // simplified
+  // simplified 2.0
 }
